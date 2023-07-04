@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: #293241;
+    overflow: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.popUp{
+    background-color: #98c1d9;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+}
+
+.popUp form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.popUp label{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.popUp button{
+    border: none;
+    border-radius: 20px;
+    font-size: larger;
+    padding: 5px;
+}
+
+.popUp input{
+    border-radius: 20px;
+    border: 1px black solid;
+    text-align: center;
+    font-size: large;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playerDetails{
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2% 0 2%;
+    margin-top: 2%;
+}
+.game{
+    font-size: 2em;
+}
+.playerName{
+    font-size: 1em;
+}
+.board{
+    margin-top: 5%;
+    width: 50%; 
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: white;
+}
+.board div{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e0fbfc;
+}
+
+.box{
+    font-size: xx-large;
+}
+.congo{
+    visibility: hidden;
+    width: 50%;
+    background-color: #98c1d9;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 40%;
+    border-radius: 20px;
+}
+.congo h1{
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+.congo button{
+    font-size: large;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px 10px 15px;
+}
+
+.congo button :hover{
+    background-color: rgb(212, 212, 212);
+}
